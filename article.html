@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Semantic Blog Articles — Sample Article</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body
+	{
+	 background-color: lightblue;
+	}
+</style>
+<body>
+  <header>
+    <h1>Semantic Blog Articles</h1>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="article.html" aria-current="page">Sample Article</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article aria-labelledby="post-title">
+      <header>
+        <h2 id="post-title">Building a Semantic Blog Article</h2>
+        <p>By Dev Student · <time datetime="2025-09-29">September 29, 2025</time></p>
+      </header>
+
+      <section aria-labelledby="why">
+        <h3 id="why">Why semantics?</h3>
+        <p>Semantic tags make content accessible to assistive technologies, improve SEO, and create a clear document outline for maintainable CSS and JS.</p>
+      </section>
+
+      <section aria-labelledby="layout">
+        <h3 id="layout">Core layout regions</h3>
+        <ul>
+          <li><code>&lt;main&gt;</code> holds the primary content of the page.</li>
+          <li><code>&lt;article&gt;</code> wraps the self-contained post that can stand alone.</li>
+          <li><code>&lt;section&gt;</code> divides the article into themed parts with headings.</li>
+          <li><code>&lt;aside&gt;</code> contains complementary info like a TOC or author bio.</li>
+          <li><code>&lt;nav&gt;</code> provides site or in-page navigation links.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="media">
+        <h3 id="media">Media with context</h3>
+        <figure>
+          <img src="image.jpeg" alt="Wireframe sketch showing header, nav, article, sidebar, comments, and footer">
+          <figcaption>Semantic regions of a typical blog page.</figcaption>
+        </figure>
+      </section>
+
+      <footer>
+        <p>Tags: semantics, html5, accessibility</p>
+      </footer>
+    </article>
+
+    <aside aria-labelledby="sidebar-title">
+      <h2 id="sidebar-title">Sidebar</h2>
+      <nav aria-label="In-page">
+        <ul>
+          <li><a href="#why">Why semantics?</a></li>
+          <li><a href="#layout">Core layout</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#comments">Comments</a></li>
+        </ul>
+      </nav>
+      <section aria-labelledby="glossary">
+        <h3 id="glossary">Glossary</h3>
+        <p><strong>Landmark</strong>: regions like main, nav, and aside that assistive tech can jump to.</p>
+      </section>
+    </aside>
+
+    <section id="comments" aria-labelledby="comments-title">
+      <h2 id="comments-title">Comments</h2>
+
+      <article>
+        <header>
+          <h3>Sam</h3>
+          <p><time datetime="2025-09-29T10:00">10:00</time></p>
+        </header>
+        <p>Clear explanation—liked the glossary!</p>
+      </article>
+
+      <form aria-label="Add a comment">
+        <label for="comment">Add your comment</label>
+        <textarea id="comment" name="comment" rows="4" required></textarea>
+        <button type="submit">Post</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Semantic Blog Articles</p>
+  </footer>
+</body>
+</html>

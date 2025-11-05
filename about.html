@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body
+	{
+	 background-color: lightblue;
+	}
+</style>
+<body>
+  <header>
+    <h1>Semantic Blog Articles</h1>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="article.html">Sample Article</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="goal">
+      <h2 id="goal">Project goals</h2>
+      <p>Demonstrate a clean, accessible blog layout that uses semantic regions and proper headings, ready for styling or framework integration.</p>
+    </section>
+
+    <section aria-labelledby="checklist">
+      <h2 id="checklist">Semantic checklist</h2>
+      <ul>
+        <li>Use one <code>&lt;main&gt;</code> per page and keep it unique.</li>
+        <li>Wrap each post in <code>&lt;article&gt;</code> with its own header/footer.</li>
+        <li>Split content with <code>&lt;section&gt;</code> and descriptive headings.</li>
+        <li>Place complementary info in <code>&lt;aside&gt;</code>; don’t mix with main narrative.</li>
+        <li>Mark menus with <code>&lt;nav&gt;</code> and add <code>aria-label</code> where helpful.</li>
+        <li>Pair media with <code>&lt;figure&gt;</code>/<code>&lt;figcaption&gt;</code> and good alt text.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Semantic Blog Articles</p>
+  </footer>
+</body>
+</html>
